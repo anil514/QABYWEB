@@ -1,0 +1,10 @@
+package programs.test;
+
+public class OddOrEven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
