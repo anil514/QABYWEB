@@ -1,0 +1,61 @@
+Round 1:
+1. What is Sanity Testing?
+2. What is Smoke Testing?
+3. Differentiate between Regression and Retesting.
+4. Explain Bug Life cycle
+5. How can we handle windows based popup?
+6. How can we handle Java popup?
+7. Explain the different type of waits.
+8. What is the use of Java Script executor?
+9. What are the common selenium exceptions?
+10. How will you handle StaleElementReference Exception?
+11. What are the types of locators in selenium?
+12. How will you get the color of an element, using selenium?
+13. Which locator is preferred in testing industry and why?
+14. What are the challenges of using the selenium?
+15. What are the API status codes, you have come across?
+16. What are the Rest Assured http methods?
+17. How will you connect to a Database, using Java?  Write the code.
+18. Write a code to reverse the code, without using the built-in method.
+
+Round 2:
+1. Write a Java code to identify, if the pair of strings are an Anagram or not
+
+
+What is the Difference between final,finally,finalize
+2.what is the difference between Call by value and call by referance
+3.How to find out the length of the string without using length function
+4.How to find out the part of the string from a string
+5.difference between throw & throws
+6.What is binding(Early and Late binding)
+He give Programes
+1.Reverse a number
+2.1,2,3,4,5,65,76,5,,4,33,4,34,232,3,2323,
+find the biggest number among these
+simple string programe.
+what is exception types of exception
+From manual
+what is the testcase technique
+why we write test case.
+bug life cycle
+what are the different status of bug
+what is the different between functional and smoke testing
+what is STLC.
+from Selenium
+what is testng and its advantage
+how to handle SSl/
+how to handle alert
+how to take screenshot
+give the diagram write a scrpt..
+tell me about Project .What are the challenge face during project
+what is the difference between RC and webdriver
+what is freamwork explain it.
+why we use wait statement.
+2nd technical
+he gives a application & tell to write the scenario
+some manual testing concepts.
+1. difference between string and string buffer?
+2. difference between linked list and arraylist?
+3. thread concepts?
+4. why string class is immutable?
+5. Singleton class?

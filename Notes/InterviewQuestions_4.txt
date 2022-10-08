@@ -1,0 +1,46 @@
+HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("One", "1");
+		hm.put("two", "12");
+		hm.put("three", "123");
+		hm.put("four", "1234");
+		
+		
+		for(String k : hm.keySet()){
+		Syso(k);
+		}
+		for(String v : hm.values()){
+		Syso(v);
+		}
+		for(Entry<String, String) kv : hm.entrySet()){
+		Syso(kv.getKey()+" : "+kv.getValue());
+		}
+		
+		
+		Feature file having Scenario , given , when then statements writen. Corresponding code is present in step definition file and we run the runner file using JUnit.
+		
+		testng.xml file is used to manage the test execution in testNG. 
+
+hierarchy of the xml file:
+====================
+suite
+test
+Class
+Method
+
+1. To execute only few TC belonging to different classes we can use <groups> concept
+in XML file:
+  <groups>
+<run>
+<include name=""smoke"">
+</run>
+</groups>
+
+In testcase:
+@Test(groups={""smoke""})
+
+2. To control the alphabetical order of execution we can use testNG helper attribute 'dependsOnMethods'
+@Test(dependsOnMethods={""method1"",""method2})
+3. To skip TC from execution we can declare method as 
+@Test(enabled=false)
+4. If test case takes more time to execute then give time attribute
+@Test(timeout=40000)

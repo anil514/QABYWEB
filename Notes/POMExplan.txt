@@ -1,0 +1,54 @@
+POM: Design Pattern
+===> Hybrid FW + POM (SRP)
+POM: 
+Page: 
+- for every page in web/mobile app, we need to create separate page java class.
+- never use assertions in page class.
+- page actions need to provide the page behaviour.
+- page locators(BY) should be private and will be accessed via public page actions.
+
+Test:
+-- have to use a test client : TestNG/Junit/Pytest/Nunit/Jasmine/Mocha
+-- assertions should be written in test class
+-- never use driver apis in test class
+
+Maven Project
+Selenium 4.0.0
+webdrivermanager 5.2.1
+TestNG 7.6.1
+
+DriverFactory:
+/**
+	 * This mehtod is used to initialize the webdriver
+	 * 
+	 * @param browserName
+	 * @return this will return the driver
+	 */
+=----init_driver()	 
+
+
+/**
+	 * this method is used to initialize the properties
+	 * 
+	 * @return this will return properties prop reference
+	 */
+	public Properties init_prop() {
+	
+	/**
+	 * take screenshot
+	 */
+	 
+	  Pages:
+	 
+	 
+	 // 1. declare private driver
+	 // 2. page constructor
+	 	// 3. By locators
+		// 4. Page Actions:
+
+Commends:
+mvn clean install
+allure serve allure-results
+
+
+

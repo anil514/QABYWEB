@@ -1,0 +1,542 @@
+NoSuchElement - unable to find the locators on webpage may be because of wrong xpath/id  - write correct locators
+elementNotvisibale - element avaiable in DOM but not visable, wait for until elemnt visiable
+elenmentNotfound  - Mab be element present in frames - driver.switchTo().frame();
+StaleElement - page got refreshed or element got refreshed, 
+
+
+Program to count the occurrence of a specific word in the sentence
+Make XPath for locating specific column in dynamic web table
+//input[@id = 'value']
+//*[contains(@id, 'value')]
+//*[contains(text(), 'value')]
+//*[text() = 'value']
+//*[start-with(@id = 'value')]
+//*[@id = 'value' and @class = 'value'][2]
+//*[name() = 'svg']//*[local-name() = 'tagName']
+//*[name() = 'svg']//*[local-name() = 'tagname']
+
+
+Validate the color of the progress bar at different points for eg:- at 100% it becomes green and before that it remains orange so how will u validate that green color has appeared?
+What did you do in the project / Framework?
+
+
+WebdriverWait wait = new WebdriverWait(driver, Duration.ofSeconds(10)).ignoring(Exception.class).polling(Duration.ofSeconds(10));
+wait.until(ExpectedConditions.precenceOfElemenet(WebElememt));
+
+WebDriverWait wt = new WabDriverWait(driver. Duration.ofSeconds(1));
+wt.until(ExpectidContions.prenceofElemnetLoacted(ele));
+
+
+File file = WebElememt.getScreenshot(OutputType.File);
+
+File file = ((TakesScreenShot)driver).getScreenShot(OutputType.File);
+((TakeScreenShot)driver).getScreenShot(OutputTypeAs.file);
+
+
+
+<suite name = "Test">
+<test name = "testOne", parallel = true, thread-pool = 5 >
+<classes>
+<class = "className">
+<method include = 'methodName" />
+</class>
+</classes>
+</test>
+</suite>
+
+
+
+List<WebElement> list = driver.findelements(element);
+for(int = 0; i<list.length; i++){
+String value = list.get(i).getText();
+if(value.equals("exceptectText"){
+      value.clck();
+}
+}
+
+
+String parent = driver.getWindowHandle();
+driver.clck();
+Set<String> child = driver.getWindowHandles();
+Iterator it = child.iterator();
+it.next();
+if(!parent.equals(child)
+driver.switchTo.window(child);
+driver.
+
+
+String s = "This is my java interview";
+
+
+
+
+
+char[] stg = s.tocharArray();
+int count =0;
+
+for(char c : stg){
+count++;
+}
+Syso(count);
+
+
+
+
+get();
+Load a new web page in the current browser window. 
+This is done using an HTTP POST operation, 
+and the method will block until the load is complete (with the default 'page load strategy'. 
+This will follow redirects issued either by the server or as a meta-redirect from within the returned HTML. 
+Should a meta-redirect "rest" for any duration of time, it is best to wait until this timeout is over, 
+since should the underlying page change whilst your test is executing the results of future calls 
+against this interface will be against the freshly loaded page. Synonym for org.openqa.selenium.WebDriver.Navigation.to(String). 
+
+
+Load a new web page in the current browser window. 
+This is done using an HTTP POST operation, 
+and the method will block until the load is complete. 
+This will follow redirects issued either by the server or as a meta-redirect from within the returned HTML. 
+Should a meta-redirect "rest" for any duration of time, it is best to wait until this timeout is over, 
+since should the underlying page change whilst your test is executing the results of future calls 
+against this interface will be against the freshly loaded page. 
+
+
+File file = ((TakesScreenShot)driver).getScreenshotAs(OutputType.FILE);
+String path = "(user.dir)+/screenshot/img.png";
+File src = new File(path);
+FileUtils.copyFile(file, src);
+
+
+@beforeSuite
+@befofeTests
+@beforeClass
+@beforeMethod
+@Test
+@aftermethod
+@afterClass
+@afterTest
+@afterSuite
+@Parameter
+
+
+
+String parent = driver.getWindowHandle();
+WebElemnt.Click();
+Set<String> set = driver.getWindowHandle();
+Iterator it = set.iterator();
+while(it.hasNext()){
+String child = it.next();
+if(!parent.equals(child){
+driver.switchTo.window(child);
+driver.close();
+}
+}
+
+WebDriverWait wait = new WebDriverWait(driver, 10);
+wait.prenceOfElementlocated(ele);
+
+<suite name "suite" parallel = "tests" thread-count = "5" >
+<suite name "suite" parallel = "classes" thread-count = "5" >
+<suite name "suite" parallel = "methods" thread-count = "5" >
+<test name = "name" >
+<paramater name = "test" value = "chrome" />
+<classes>
+<class name = "className"/>
+<class name = "className"/>
+</classes>
+</test>
+</Suite>
+
+
+@paramater("test")
+@test
+public void test1(String test){
+launchbrowser(test);
+}
+
+
+driver.get("https://userName:Password@URL")
+
+
+//Premitive to Wrapper ---->valueOf(premitive)
+int i = 10;
+Interger in = Interger.valueOf(10);
+
+
+//Wrapper to Premitive  -->XXXvalue();
+Interger I = new Interger(130);
+int i = I.intValue();
+
+
+String s = "Bob i am in Allegion Ind";
+String[] st = s.spilt("");
+int count = 0;
+for(int i =0; i<st.size; i++){
+String in = st.get(i);
+Syso(in);
+for(int j = i+1; j<st.size; j++){
+if(st[i].equals(st[j]){
+String dub = st[i];
+Syso(st[i]);
+}
+}
+
+}
+
+
+
+M = 1;
+A = 2;
+B = 2;
+N = 3;
+I = 4;
+
+
+
+String s = "Anil";
+String s1 = new String(s);
+String s2 = s1;
+String s3 = new String(s);
+s.equaI(s1);
+s1 == s2;
+
+
+
+
+
+
+
+
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+wait.until(ExpectedConditions.prenceOfElemntLoacated(ele));
+
+
+FluientWait wa = new FluientWait(WebDriver)
+.withTimeout(Duartion.ofSeconds(10))
+.pollingEvery(Duartion.ofSeconds(2))
+.ignoring(Exceptions.classs);
+
+
+String par = driver.getWindowHandle();
+ele.click();
+Set<String> all = driver.getWindowHandles();
+Iterator<String> it = all.iterator();
+while(it.hasNext()){
+String ch = it.next();
+if(ch.equals(par)){
+driver.switchTo.window(ch);
+driver.close();
+}
+driver.switchTo.window(par);
+}
+
+
+@Test (groups = {"regression"})
+<groups>
+<run>
+<include name = "regresioon" />
+</run>
+</groups>
+
+
+
+
+//tagName[@attribuiteName = 'value']/ansector::tagName
+
+
+
+
+select empNo, Sal+com from tableName;
+
+select * from tableName where name like 's%'
+
+select * from tableName where name like '_A%'
+
+select eName, dep from tableName a, tableName b where a.no = b.no
+
+select eName from tableName Group By eName where count(eName)>1
+
+
+select max(salary) from table LIMIT 5;
+select * from table1 LEFT JOIN table2 ON table1.columnName = table2.columnName
+
+select max(salary) from table where salary<(select max(salary) from table)
+
+select * from table where name like 'ar%'
+
+select max(sal) from table1 where sal <(select max(sal) from table1)
+
+
+Connection con = DriverManager.getConnection("DB URL", "Username", "password");
+Statement st = con.createStatement();
+ResultSet s = st.excuteQuer("select * from tableNmae");
+Iterator it = s.iterator();
+if(it.hasNext()){
+it.next();
+}
+
+File file = new File("file");
+Properties prop = new Properties(file);
+HashMap<String, String> hm = new HashMap<String, String>();
+hm.get(1);
+
+
+private By id = By.id("idvalue");
+
+public String enter(String text){
+id.sendKeys("text");
+return String;
+}
+
+
+//input[@class = 'RNmpXc']
+//*[@class = 'goxjub']
+
+JavaScriptExcuter js = new JavaScriptExcuter(driver);
+js.excuteScript(document.getElementByXpath("xpatp").value("text data"));
+
+Selenium question: 
+
+
+
+ How to work with dynamic web table ?
+
+ What is the assertion & types of assertions ?
+
+ what to work with file attachment & file download in web driver ?
+
+ How to file attachment without Autoit scripts?
+
+ how to work with web list @ radio button in web driver ?
+
+ what is the difference between the implicit wait & web driver wait?
+
+
+
+ Which repository you have used to store the test scripts?
+
+ What is Check-in & check-out, revert?
+
+ how to work with Radio buttons?
+
+ how to work with web list ?
+
+ what is the use of Actions class in webdriver?
+
+ how to work with keyboard and mouse operation in java?
+
+ how to get the text from the UI in runtime?
+
+ explain the Architecture of Webdriver?
+
+ How to run the test scripts with multiple browser?
+
+
+
+ Java Qustion 
+
+
+
+ IN parent and child class I have disp() method , using child class reference how to call parent disp() methode ?
+
+ what is the use of this keyword?
+
+ how many types of exception available in java?
+
+
+
+ difference between final finaly , finalize?
+
+ difference between Overriding and overload ?
+
+ difference between MAP & set ?
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+String par = driver.getWindowHandle();
+ele.click();
+Set<String> all = driver.getWindowHandles();
+Iterator it = all.iterator();
+while(it.hasNext()){
+String ch = it.next();
+if(!ch.equals(par)){
+driver.switchTo().window(ch);
+driver.close();
+}
+}
+driver.switchTo.window(par);
+
+
+
+Proprties prop = New Proprties();
+FileInputStream ip = new FileInputStream("path");
+prop.load(ip);
+prop.getProperty("browser");
+
+
+@Test(priority = 1, enabled = false)
+
+//print available duplicates
+select count(empId) from tableName Group By empId Having Count(empId)>1 
+// filter duplicates
+select distnict(empId) from tableName
+
+delete from tableName where empId NOT IN (select count(empId) from tableName Group By empID Having count(empID)>1)
+
+
+isSelcted  for seelcting radio buttons
+isEnabled for enabling buttons 
+isDisplayed for elements displayed or not
+
+driver.manage().timeout().implicityWait(Duration.ofSeconds(3)); 
+
+WebDriverWait wait = new WabDriverWait(driver, Duration.ofSeconds(5));
+wait.until(ExpectedConditions.prenceofElemnetLoacted());
+
+
+git branch branchName check-out;
+
+
+
+int i = 123;
+int rev;
+while(i = 0){
+int rem = i%10; 
+rev = rem * 10 + rev;
+i = i/10;
+}
+
+//*[name() = 'svg']//*[local-name() = 'tagNeme']
+//*[name() = 'svg']//*[local-name() = 'g']
+
+
+1. Brief introduction about yourself
+2. Encapsulation and abstraction.. how this is implemented in your project
+3. Can abstract class have final methods?
+4. What is a singleton class?
+5. What is the use of constructor?
+6. Difference between import and extends
+7. Is it possible to have a try within another try catch block?
+8. What is multiple inheritance? How have you used it in your project?
+9. Can you elaborate your framework structure?
+10. What is the use of Action class and syntax?
+11. Code for scrolling horizontally?
+12. Suppose you have to assert value. One of which you get from the web page and the other is the expected value. Where would you store the expected value in your code instead of hard coding it?
+13. What is difference between webdriver listener and testng listener
+14. How would you locate a web element using xpath for ancestor?  //*[@att = 'vale']//ancestor::tagname
+15. Which tool do you use for test management and defect management?
+16. Which version control do you use?
+17. Will you be able to manage ui, api and performance testing on your own and provide reports?
+
+
+
+Questions on selenium
+what is BDD framework
+how to write cucumber scenarios
+how to handle multiple window pop ups
+how to handle multiple tabs with in a window
+how to attach file using selenium
+are you able to build a framework
+TEST NG
+
+
+Explain framework
+SQL queries and joins
+Java collection framework and a program to find out duplicate entries
+Selenium question on window handles, waits and dropdown
+
+OOPS concept
+Constructer
+Selenium Action methods
+Jenkins
+CL/CD
+array program
+sorting program
+DownStream
+GIT push
+PULL
+SQL
+Exceptions handled in real time project
+
+1. What are the exceptions we get in Selenium?
+2. Can we automate Captcha or DB with Selenium?
+3. Tell me about gherkin syntax
+4. What is the difference between set.sleep & set.speed?
+5. What are the waits available in Selenium?
+6. What is Page Object Model?
+7. What is the difference between Page object model & page factory?
+8. How would you rate yourself in Java?
+9. Write a program to swap numbers?
+10. What are the frameworks available in Selenium?
+11. How to work with fall back scenarios?
+12. How to do broken link validation?
+13. What are the locators available in Selenium?
+14. What is the VCT you use in your project? Tell me a bit about the structure of your repository?
+15. Have you ever worked with Jenkins?
+
+WAP in java to find one string is a substring of another or not.
+Occurrence of chars in one string.
+
+Various wait in selenium, window and frame handling.. Various join in sql.. Union and Group by usage.. String reversal in java.. Agile methodology terms..
+
+what is selenium ide and RC , differentiate it?
+
+how do u automate and what are the locaters?
+
+automate any functionality of ur project u have done recently?
+
+what is selenium?
+
+can u automate the font size ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int num = 234;
+		int rev = 0;
+		while(num>0) {
+			int rem = num%10;
+			rev = rev * 10 + rem;
+			num = num/10;
+		}
+		System.out.println(rev);

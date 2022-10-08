@@ -1,0 +1,64 @@
+allure serve allure-results
+
+GIT:
+Create a REPO in remote
+go to wc path in CMD
+git init
+git remote add origin https://github.com/anil514/pomtest.git
+git status
+add .gitignore file
+git status
+git add .
+git status
+git commit -m "first commit for page object model"
+git push origin master (or) git push -u origin main
+check the code at remote side
+code will be visiable in master branch at remote
+
+
+//nth Commit:
+add/update/delete any files in your WC 
+git status
+git add <file name>
+git status
+git commit -m "comment"
+git push origin master
+check the updated code at remote side
+check the commit history
+
+
+git log 
+git log --oneline
+
+git branch
+git branch -vv
+git remote
+
+
+git branch test01
+git checkout test01
+make changes for branch
+git status
+git add .
+git status
+git commit -m "message"
+git push origin test01
+Complete the PR process...
+
+
+git checkout main/master
+git branch
+git pull origin main/master
+
+
+git switch -C branchname  // create a brach and checkout
+git branch -d branchname  // delete branch
+
+git reset --soft HEAD^  //remove last commit from local repo
+git reset --mixed HEAD^ //remove from STG, local repo
+git reset --hard HEAD^  //remote from Work cop, STG and local repo
+
+//remove after push 
+git push -f origin master  //remove from remote repo
+
+

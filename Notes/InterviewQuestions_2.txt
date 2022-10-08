@@ -1,0 +1,44 @@
+public String rev(String s){
+String[] str = s.spilt(" ");
+String rev = "";
+for(int i =str.length-1; i>=0; i--){
+char ch = str.charAt(i);
+rev = rev + ch;
+}
+Syso(rev);
+return rev;
+}
+
+
+public void test(){
+rev("Apple Manago");
+}
+
+int h = 3;  - 90 degress
+int min = 45; 135 degress
+
+
+3:15: ->45 degress 
+
+every mint as - 3 degeress
+3:30: -> 90 degress
+
+
+every hour - 30 degress
+
+
+
+h = 3.00
+m = 30.00
+Output : 75
+h = 12:00
+m = 30.00
+Output: 
+165 degree
+Tarun Papneja12:36 PM
+{
+"id" : 1,
+"name" : "Anjaneyulu"
+}
+http://test.swiggy.com
+POST

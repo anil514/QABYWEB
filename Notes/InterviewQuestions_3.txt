@@ -1,0 +1,99 @@
+What is mean by Agile Methodology
+ different testing methods , test cases to buy a pen and also testcases for an application's login page. 
+ A logical question of 3lt. and 5lt. mugs(you can google for whole question).
+
+Interview Questions
+Testing Techniques
+Regression testing
+Retesting
+integration testing and some other testing techniques
+test cases for an application login page
+test cases for real time eg.
+sql queries---Select & Update
+
+
+Team asked manual testing questions and SQL queries like bug life cycle, 
+retesting and regression, priority severity, test case template, 
+STLC,SDLC nd second highest salary in table, about joins types, DDL DML
+
+Interview Questions
+Bug life cycle, second highest sal from table
+Select max(Salary) from table where salary<(Select max(Salary) from table)
+
+basic questions, stlc, write test cases for amazon site, IRCTC, agile methodology.
+SDLC, STLC, Test Plan, PL SQL, Selenium, UFT, Java, Bug life cycle.
+
+
+Interview questions:
+Introduce yourself
+what are the types of testing you would perform in daily tasks
+defect life cycle
+SDLC and STLC
+what are methods of writing test cases
+what a test case contains
+what a defect contains
+smoke testing and sanity testing
+regression testing
+what test cases would be chosen for Automation
+what type of testing will be performed before releasing to production
+what is verification and validation
+what is Vmodel
+what is Page Object model
+How do we write update query in sql
+what are joins
+what is query for finding maximum and salary and employee name from 2 tables
+
+select max(salary) from table1 where employee =(Select )
+
+
+
+Switch frames, nfr, windows, real time scenarios, waits, test strategy, plan, easy puzzle
+Write a Java program to identify the character and print the number of occurrences
+Questions related to test strategy, SDLC, project experience etc..
+Questions on SSL, HTTP/HTTPS
+
+
+Interview Questions
+1. Tell me about yourself
+2.What is regression
+3. Tell me about agile methodology
+4. Difference b/w Sanity and Smoke
+5. Tell me about adhoc testing
+6. Testing techniques
+7. Tell about Black Box Testing
+8. Tell about Integration Testing
+9. Tell about Testing Life Cycle
+10 . Tell about Bug Life Cycle
+
+
+
+Ok I attended today below are questions
+IVY COMPTECH 1ST ROUND 20-MAY-2021
+
+
+what does mvn build mvn verify commands do?
+
+what if dependency is not there in maven repository?
+what actually pom.xml does?
+effective.xml
+git revert reset differences?
+how to run tests in parallel? 
+what to do if we wanted to run in multiple times?
+how do u handle alert?
+what is listener?How many listerners have u implemented? how u impleneted in framework?
+what is constructor?
+can we override constructor?
+what is interface? can interface method be static?
+can we overide static method?
+how do u call construcor of parent class?
+what happens if we dont define any constructor?
+what happens if we have a class but not instatntiated?
+what default constructor does?
+classA a=new ClassB()  gives accesss to A methods or B methods?
+what are types of inheritances?
+why multiple inheritance is not allowed in java?
+diff between arraylist and linkedlist?why linkedlist is fast?
+diff between hashmap and hashtable?
+w.a.p for finding all missing numbers from 1-20 in an array {1,2,7,12,15,8,20}
+w.a.p to find character occurance?
+diff between action actions?

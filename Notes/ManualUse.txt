@@ -1,0 +1,38 @@
+How do you know if you have enough test cases in order to successfully test a product?
+
+https://www.softwaretestingmaterial.com/test-plan-template/
+2:21 Objective
+2:47 Scope
+3:52 Testing Methodology
+5:10 Approach
+6:02 Flow Chart
+7:51 Assumption
+8:47 Risk
+9:07 Backup Plan / Mitigation Plan
+10:53 Roles and Responsibility
+13:59 Scheduling
+14:55 Defect Tracking
+16:22 Test environment / Test Bed
+17:20 Entry and Exit Criteria
+21:55 Test Automation
+22:27 Deliverables
+23:54 Templates.
+
+Select max(salary) from table where salary<(Select max(salary) from table where salary(Select max(salary) from table where salary))
+
+select * from table order by salary desc limit n-1 1;
+
+//*[name() = 'svg']//*[local-name() = 'tagName']
+
+
+
+QC and Testing
+3 momnths sprint
+zero sprint
+
+use masters
+RESTORE DATABASE DB_name FROM DISK = 'C:\OldDBClients.bak' WITH REPLACE
+
+BACKUP DATABASE DB_name TO DISK = 'D:\backups\testDB.bak';
+
+

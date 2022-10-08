@@ -1,0 +1,76 @@
+
+        create table LOCATION(Location_ID int, Regional_Group varchar(255));
+        create table DEPARTMENT(Department_ID int, Name varchar(255), Location_ID int);
+        create table JOB(Job_ID int, Function varchar(255));
+        create table EMPLOYEE(EMPLOYEE_ID int, LAST_NAME varchar(255), FIRST_NAME varchar(255), MIDDLE_NAME varchar(255), JOB_ID int, MANAGER_ID int, HIRE_DATE varchar(255), SALARY int);
+
+
+insert into LOCATION values (122, "NEW YORK");
+insert into LOCATION values (122, "DALLAS");
+insert into LOCATION values (122, "CHICAGO");
+insert into LOCATION values (122, "BOSTON");
+
+
+insert into DEPARTMENT values (10, "ACCOUNTING", 122);
+insert into DEPARTMENT values (20, "RESEARCH", 124);
+insert into DEPARTMENT values (20, "SALES", 123);
+insert into DEPARTMENT values (40, "OPERATIONS", 167);
+
+insert into JOB values (667, "CLERK");
+insert into JOB values (668, "STAFF");
+insert into JOB values (669, "ANALYST");
+insert into JOB values (670, "SALESPERSON");
+insert into JOB values (671, "MANAGER");
+insert into JOB values (672, "PRESIDENT");
+
+insert into EMPLOYEE values (7369, "SMITH", "JOHN", "Q", 667, 7902, "17-DEC-84", 800);
+insert into EMPLOYEE values (7499, "ALLEN", "KEVIN", "J", 670, 7698, "20-FEB-85", 1600);
+insert into EMPLOYEE values (7505, "DOYLE", "JEAN", "K", 671, 7839, "04-APR-85", 3850);
+
+
+
+select * from LOCATION;
+select * from DEPARTMENT;
+select * from JOB;
+select * from EMPLOYEE;
+
+select  FIRST_NAME, LAST_NAME, SALARY from EMPLOYEE;
+
+Select EMPLOYEE_ID as "id of the employee", LAST_NAME as "name" from employee;
+
+Select FIRST_NAME, Salary*12 as "annual salary" from employee;
+
+
+Select * from employee where  Last_NAME = "SMITH";
+Select * from DEPARTMENT where  Department_ID = 20;
+Select * from employee where  Salary between 3000 and 4500;
+
+Select * from DEPARTMENT where  Department_id in (20,30);
+select * from DEPARTMENT where Department_id not in (10, 20);
+
+Select * from employee where  Last_NAME like "S%";
+Select * from employee where  Last_NAME like "S%H";
+Select * from employee where  Last_NAME like "S____";
+
+Select * from employee where  EMPLOYEE_ID = 7505 and Salary > 3500;
+Select * from employee where salary is NULL;
+
+Select * from employee order by EMPLOYEE_ID ASC;
+Select EMPLOYEE_ID, Last_NAME from employee order by salary DESC;
+Select EMPLOYEE_ID, Last_NAME from employee e order by e.Last_NAME ASC, e.salary DESC;
+Select Last_NAME from employee e order by e.LAST_NAME ASC, e.EMPLOYEE_ID DESC;
+
+
+Select department_id, count(*) from DEPARTMENT group by department_id;
+
+Select job_id, count(*), max(salary), min(salary), avg(salary) from employee group by job_id;
+
+
+                
+select department_id, count(*) from department Group by department_id having count(*)>1;
+
+select department_id, Name from department group by department_id having department_Id = 20;
+
+select department_id, name, Location_ID from department group by department_id having department_id in(10, 20);
+
+
